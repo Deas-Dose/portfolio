@@ -59,4 +59,13 @@
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+    
+    .portfolio__item-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 50%;
+    }
 }

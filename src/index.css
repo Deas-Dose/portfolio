@@ -138,11 +138,7 @@ img {
     top: 50%;
     translate: -50% -50%;
     border-radius: 50%;
-    background: linear-gradient(
-      to right,
-      var(--color-secondary-1),
-      var(--color-secondary-2)
-    );
+    background: rgb(92, 92, 255);
     animation: rotate 20s infinite;
     opacity: 0;
     transition: opacity 300ms ease;

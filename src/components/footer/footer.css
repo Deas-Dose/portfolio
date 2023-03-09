@@ -32,7 +32,8 @@ footer a:hover {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 4rem;
+    
+    margin: 4rem 0;
 }
 
 .footer__socials a {

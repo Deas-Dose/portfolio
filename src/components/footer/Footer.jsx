@@ -14,9 +14,6 @@ const Footer = () => {
         <li><a href="#Portfolio"> Portfolio </a></li>
         <li><a href="#Contact"> Contact </a></li>
       </ul>
-      <div className="footer__socials">
-        <a href="#"></a>
-      </div>
 
       <div className="footer__socials">
         <a href="https://www.github.com/Deas-Dose" target='_blank'><BsGithub/> </a>
