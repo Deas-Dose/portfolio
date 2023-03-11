@@ -14,9 +14,9 @@
 
 :root {
     --color-bg: #0D0E17;
-    --color-bg-variant: #161A2C;
+    --color-bg-variant: rgb(22, 26, 44);
     --color-secondary-1: #7AFE00;
-    --color-secondary-2: #B700F0;
+    --color-secondary-2: rgb(183, 0, 240);
     --color-light: #A7ABCE;
     --transition: all 400ms ease;
     --color-main: white;

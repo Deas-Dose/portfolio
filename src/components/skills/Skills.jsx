@@ -6,11 +6,14 @@ const Skills = () => {
   const [isLargeScreen, setIsLargeScreen] = useState(window.matchMedia('(min-width: 1024px)').matches);
 
   useEffect(() => {
-    const elements = document.querySelectorAll('#hkr');
+    const elements = document.querySelectorAll('.hack [data-value]');
+
+    
 
     const handleHover = (event) => {
       const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
       let iter = 0;
+      clearInterval(interval);
       let interval = setInterval(() => {
         event.target.innerText = event.target.dataset.value
           .split('')
@@ -30,8 +33,9 @@ const Skills = () => {
 
     if (isLargeScreen) {
       elements.forEach(element => {
-        element.addEventListener("mouseover", handleHover);
-        return () => element.removeEventListener("mouseover", handleHover);
+        if (element.dataset.value) {
+          element.addEventListener("mouseover", handleHover);
+        }
       });
     }
 
@@ -43,7 +47,9 @@ const Skills = () => {
 
     return () => {
       elements.forEach(element => {
-        element.removeEventListener("mouseover", handleHover);
+        if (element.dataset.value) {
+          element.removeEventListener("mouseover", handleHover);
+        };
       });
       window.removeEventListener('resize', handleResize);
     };
@@ -61,7 +67,7 @@ const Skills = () => {
       <div className="container experience__container">
 
 
-        <div className="experience__frontend">
+        <div className="experience__frontend card__effect ui">
           <h3>Frontend Developement</h3>
 
           <div className="experience__content">
@@ -97,7 +103,7 @@ const Skills = () => {
         </div>
 
 
-        <div className="experience__backend">
+        <div className="experience__backend card__effect server">
           <h3>Backend Developement</h3>
 
           <div className="experience__content">
@@ -125,7 +131,7 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className="experience__cybsec">
+        <div className="experience__cybsec card__effect hack">
           <h3 id='hkr' data-value='Penetration Testing'>Penetration Testing</h3>
           <div className="experience__content">
             <article className="experience__details">
@@ -159,7 +165,7 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className="experience__fde">
+        <div className="experience__fde card__effect dfe">
           <h3>Fluid Dynamics and Energy</h3>
           <div className="experience__content">
             <article className="experience__details">
