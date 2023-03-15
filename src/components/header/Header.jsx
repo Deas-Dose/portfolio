@@ -2,7 +2,7 @@ import React from 'react'
 import './header.css'
 import CTA from './CTA'
 import HeaderSocials from './HeaderSocials'
-import logo from '../../assets/logo.jpg'
+import me from '../../assets/me0.jpg'
 
 const Header = () => {
   return (
@@ -19,7 +19,7 @@ const Header = () => {
         {/* Socials */}
         <HeaderSocials />
         <div className="logo">
-          <img src={logo} alt="logo" />
+          <img src={me} alt="logo" />
         </div>
 
         {/* Contact me section _ jump to */}

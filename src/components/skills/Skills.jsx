@@ -27,7 +27,7 @@ const Skills = () => {
         if(iter >= event.target.dataset.value.length) {
           clearInterval(interval);
         }
-        iter += 1 / 3;
+        iter += 1 / 2;
       }, 20);
     };
 
@@ -132,26 +132,26 @@ const Skills = () => {
         </div>
 
         <div className="experience__cybsec card__effect hack">
-          <h3 id='hkr' data-value='Penetration Testing'>Penetration Testing</h3>
+          <h3 data-value='Penetration Testing'>Penetration Testing</h3>
           <div className="experience__content">
             <article className="experience__details">
               <BsFillPatchCheckFill className='experience__details-icon' />
               <div>
-                <h4 id='hkr' data-value='Websites'>Websites</h4>
+                <h4 data-value='Websites'>Websites</h4>
                 <small className='text-light'>Intermediate</small>
               </div>
             </article>
             <article className="experience__details">
               <BsFillPatchCheckFill className='experience__details-icon' />
               <div>
-                <h4 id='hkr' data-value='APIs'>APIs</h4>
+                <h4 data-value='APIs'>APIs</h4>
                 <small className='text-light'>Intermediate</small>
               </div>
             </article>
             <article className="experience__details">
               <BsFillPatchCheckFill className='experience__details-icon' />
               <div>
-                <h4 id='hkr' data-value='Android Apps'>Android Apps</h4>
+                <h4 data-value='Android Apps'>Android Apps</h4>
                 <small className='text-light'>Beginner</small>
               </div>
             </article>
@@ -159,7 +159,7 @@ const Skills = () => {
               <BsFillPatchCheckFill className='experience__details-icon' />
               <div>
                 <h4 id='hkr' data-value='Active Directory Network'>Active Directory Network</h4>
-                <small className='text-light'>Beginner</small>
+                <small id='hkr' className='text-light'>Beginner</small>
               </div>
             </article>
           </div>

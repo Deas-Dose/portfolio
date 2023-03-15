@@ -138,8 +138,9 @@
     position: relative;
 }
 
-.experience__cybsec {
-    font-size: 0.9rem;
+#hkr {
+    margin-top: 0.2rem;
+    font-size: 0.7rem;
 }
 
 .experience__container > .experience__frontend::before {
