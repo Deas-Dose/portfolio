@@ -32,8 +32,8 @@ const Contact = () => {
           <article className="contact__option">
             <RxDiscordLogo className='contact__option-icon' />
             <h4>Discord</h4>
-            <h5>soh__\Fa#8777</h5>
-            <a href="https://www.discordapp.com/users/soh__\Fa#8777" target='_blank'>DM me</a>
+            <h5>and_rotate#0001</h5>
+            <a href="https://www.discordapp.com/users/and_rotate#0001" target='_blank'>DM me</a>
           </article>
         </div>
         <form ref={form} onSubmit={sendEmail}>
